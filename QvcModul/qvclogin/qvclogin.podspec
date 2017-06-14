@@ -17,16 +17,18 @@ Pod::Spec.new do |s|
 
   s.name         = "qvclogin"
   s.version      = "0.0.1"
-  s.summary      = "A short description of qvclogin."
+  s.summary      = " #  These will help people to find your library, and whilst it
+  #  can feel like a chore to fill in it's definitely to your advantage. The
+  #  summary should be tweet-length, and the description more in depth."
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "i am a description"
+  s.description  = "i am a description should be longer than summary. yeh! i see. siap!"
 
-  s.homepage     = "http://EXAMPLE/qvclogin"
+  s.homepage     = "http://qisc.us"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -90,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
 
-  s.source_files  = "qvc/QvcModul/qvclogin/**/*.{h,m,swift,xib}"
+  s.source_files  = "qvclogin/**/*.{h,m,swift,xib}"
   # s.public_header_files = "Classes/**/*.h"
 
 
