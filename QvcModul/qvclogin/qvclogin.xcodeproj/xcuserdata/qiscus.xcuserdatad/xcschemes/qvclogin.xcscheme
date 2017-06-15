@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DA845B01EF18CA300563088"
+               BlueprintIdentifier = "3DA845FD1EF23F7100563088"
                BuildableName = "qvclogin.framework"
                BlueprintName = "qvclogin"
                ReferencedContainer = "container:qvclogin.xcodeproj">
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DA845B91EF18CA300563088"
-               BuildableName = "qvcloginTests.xctest"
-               BlueprintName = "qvcloginTests"
-               ReferencedContainer = "container:qvclogin.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DA845B01EF18CA300563088"
-            BuildableName = "qvclogin.framework"
-            BlueprintName = "qvclogin"
-            ReferencedContainer = "container:qvclogin.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DA845B01EF18CA300563088"
+            BlueprintIdentifier = "3DA845FD1EF23F7100563088"
             BuildableName = "qvclogin.framework"
             BlueprintName = "qvclogin"
             ReferencedContainer = "container:qvclogin.xcodeproj">
@@ -82,7 +63,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DA845B01EF18CA300563088"
+            BlueprintIdentifier = "3DA845FD1EF23F7100563088"
             BuildableName = "qvclogin.framework"
             BlueprintName = "qvclogin"
             ReferencedContainer = "container:qvclogin.xcodeproj">

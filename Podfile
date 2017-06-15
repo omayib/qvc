@@ -10,22 +10,14 @@ abstract_target 'qvc' do
         xcodeproj 'QvcModul/qvclogin/qvclogin.xcodeproj'
         workspace 'QvcModul/qvclogin/qvclogin.xcworkspace'
 
-        target 'qvcloginTests' do
-            inherit! :search_paths
+        #target 'qvcloginTests' do
+        #    inherit! :search_paths
             # Pods for testing
-        end
+        #end
 
     end
 
-    target 'qvcprofile' do
-        xcodeproj 'QvcModul/qvcprofile/qvcprofile.xcodeproj' 
-        workspace 'QvcModul/qvcprofile/qvcprofile.xcworkspace'
-
-        target 'qvcprofileTests' do
-            inherit! :search_paths
-            # Pods for testing
-        end
-    end
+    
 
     post_install do |installer|
         installer.pods_project.build_configuration_list.build_configurations.each do |configuration|
