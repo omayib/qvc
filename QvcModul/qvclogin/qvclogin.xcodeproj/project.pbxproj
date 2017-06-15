@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3DA845BB1EF18CA300563088 /* qvclogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DA845B11EF18CA300563088 /* qvclogin.framework */; };
-		3DA845C01EF18CA300563088 /* qvcloginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA845BF1EF18CA300563088 /* qvcloginTests.swift */; };
 		3DA845C21EF18CA300563088 /* qvclogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA845B41EF18CA300563088 /* qvclogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA845F21EF2182F00563088 /* qvcloginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA845BF1EF18CA300563088 /* qvcloginTests.swift */; };
+		3DA845F31EF2183800563088 /* qvcloginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA845BF1EF18CA300563088 /* qvcloginTests.swift */; };
+		BE974FCA1FBAF6B900CE1268 /* Pods_qvcloginTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AD11298167F351D822F150 /* Pods_qvcloginTests.framework */; };
 		D6605E2DEAE49EAB4DB9E049 /* Pods_qvc_qvclogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 307FC99D4B03035B74709529 /* Pods_qvc_qvclogin.framework */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +34,9 @@
 		3DA845BA1EF18CA300563088 /* qvcloginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = qvcloginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA845BF1EF18CA300563088 /* qvcloginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = qvcloginTests.swift; sourceTree = "<group>"; };
 		3DA845C11EF18CA300563088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73AD11298167F351D822F150 /* Pods_qvcloginTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qvcloginTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B69A89940EAFD1EF618847 /* Pods-qvcloginTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qvcloginTests.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-qvcloginTests/Pods-qvcloginTests.release.xcconfig"; sourceTree = "<group>"; };
+		A7962B30BAE08AEB304FFBD2 /* Pods-qvcloginTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qvcloginTests.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-qvcloginTests/Pods-qvcloginTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ADCFA8C764EFF32D95AC065B /* Pods-qvc-qvclogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qvc-qvclogin.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-qvc-qvclogin/Pods-qvc-qvclogin.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +54,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DA845BB1EF18CA300563088 /* qvclogin.framework in Frameworks */,
+				BE974FCA1FBAF6B900CE1268 /* Pods_qvcloginTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				307FC99D4B03035B74709529 /* Pods_qvc_qvclogin.framework */,
+				73AD11298167F351D822F150 /* Pods_qvcloginTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -106,6 +113,8 @@
 			children = (
 				2DFBD0270F8D576C42BBABD8 /* Pods-qvc-qvclogin.debug.xcconfig */,
 				ADCFA8C764EFF32D95AC065B /* Pods-qvc-qvclogin.release.xcconfig */,
+				A7962B30BAE08AEB304FFBD2 /* Pods-qvcloginTests.debug.xcconfig */,
+				A4B69A89940EAFD1EF618847 /* Pods-qvcloginTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -148,9 +157,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3DA845C81EF18CA300563088 /* Build configuration list for PBXNativeTarget "qvcloginTests" */;
 			buildPhases = (
+				DA0B58D2B894B8110D7F8F77 /* [CP] Check Pods Manifest.lock */,
 				3DA845B61EF18CA300563088 /* Sources */,
 				3DA845B71EF18CA300563088 /* Frameworks */,
 				3DA845B81EF18CA300563088 /* Resources */,
+				165A8382A584C9DC647C3574 /* [CP] Embed Pods Frameworks */,
+				16F29866037B16DA30DDD8BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,6 +232,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		165A8382A584C9DC647C3574 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-qvcloginTests/Pods-qvcloginTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		16F29866037B16DA30DDD8BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-qvcloginTests/Pods-qvcloginTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D8F52844EFD1F534A275850 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -250,6 +292,21 @@
 			shellScript = "\"${SRCROOT}/../../Pods/Target Support Files/Pods-qvc-qvclogin/Pods-qvc-qvclogin-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DA0B58D2B894B8110D7F8F77 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,6 +314,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA845F21EF2182F00563088 /* qvcloginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,7 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3DA845C01EF18CA300563088 /* qvcloginTests.swift in Sources */,
+				3DA845F31EF2183800563088 /* qvcloginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +480,9 @@
 		};
 		3DA845C91EF18CA300563088 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7962B30BAE08AEB304FFBD2 /* Pods-qvcloginTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QG8KA4P8TE;
 				INFOPLIST_FILE = qvcloginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -434,7 +494,9 @@
 		};
 		3DA845CA1EF18CA300563088 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B69A89940EAFD1EF618847 /* Pods-qvcloginTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = QG8KA4P8TE;
 				INFOPLIST_FILE = qvcloginTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -463,6 +525,7 @@
 				3DA845C71EF18CA300563088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3DA845C81EF18CA300563088 /* Build configuration list for PBXNativeTarget "qvcloginTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +534,7 @@
 				3DA845CA1EF18CA300563088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

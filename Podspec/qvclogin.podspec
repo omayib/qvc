@@ -92,7 +92,7 @@ Pod::Spec.new do |s|
   #
 
 
-  s.source_files  = "qvclogin/**/*.{h,m,swift,xib}"
+  s.source_files  = "QvcModul/qvclogin/**/*.{h,m,swift,xib}"
   # s.public_header_files = "Classes/**/*.h"
 
 
