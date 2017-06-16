@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		24A1ACD18C70802207A71418 /* Pods_qvc_qvclogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61DB81D4C773F7E9E2042539 /* Pods_qvc_qvclogin.framework */; };
 		3DA846031EF23F7100563088 /* qvclogin.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DA846011EF23F7100563088 /* qvclogin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DA8460A1EF3D8FE00563088 /* QvcLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA846091EF3D8FE00563088 /* QvcLoginManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3DA845FE1EF23F7100563088 /* qvclogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = qvclogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DA846011EF23F7100563088 /* qvclogin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = qvclogin.h; sourceTree = "<group>"; };
 		3DA846021EF23F7100563088 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA846091EF3D8FE00563088 /* QvcLoginManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QvcLoginManager.swift; sourceTree = "<group>"; };
 		601C2296A0A366CC90969D76 /* Pods-qvc-qvclogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qvc-qvclogin.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-qvc-qvclogin/Pods-qvc-qvclogin.debug.xcconfig"; sourceTree = "<group>"; };
 		61DB81D4C773F7E9E2042539 /* Pods_qvc_qvclogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_qvc_qvclogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E5A7B84915B4C7F4F7FB966D /* Pods-qvc-qvclogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-qvc-qvclogin.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-qvc-qvclogin/Pods-qvc-qvclogin.release.xcconfig"; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				3DA846011EF23F7100563088 /* qvclogin.h */,
 				3DA846021EF23F7100563088 /* Info.plist */,
+				3DA846091EF3D8FE00563088 /* QvcLoginManager.swift */,
 			);
 			path = qvclogin;
 			sourceTree = "<group>";
@@ -122,6 +125,7 @@
 					3DA845FD1EF23F7100563088 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = QG8KA4P8TE;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -191,6 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DA8460A1EF3D8FE00563088 /* QvcLoginManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +307,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 601C2296A0A366CC90969D76 /* Pods-qvc-qvclogin.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QG8KA4P8TE;
@@ -314,6 +320,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = qiscus.com.qvclogin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -322,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E5A7B84915B4C7F4F7FB966D /* Pods-qvc-qvclogin.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = QG8KA4P8TE;
@@ -357,6 +365,7 @@
 				3DA846081EF23F7100563088 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
